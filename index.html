@@ -1,0 +1,36 @@
+cat > index.html << 'EOF'
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Smart LMS - Thapelo-02</title>
+<style>
+body{font-family:Arial;background:#f4f6f9;margin:0}
+header{background:#1e293b;color:white;padding:15px 30px;display:flex;justify-content:space-between;align-items:center}
+header h1{margin:0;font-size:20px}
+nav a{color:white;margin-left:15px;text-decoration:none}
+.container{padding:30px;display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:20px}
+.card{background:white;padding:20px;border-radius:10px;box-shadow:0 2px 5px rgba(0,0,0,0.1)}
+.btn{background:#3b82f6;color:white;padding:8px 15px;border:none;border-radius:5px;cursor:pointer}
+h3{margin-top:0}
+</style>
+</head>
+<body>
+<header>
+<h1>🎓 Smart Learner Management System</h1>
+<nav><a href="#">Dashboard</a><a href="#">Courses</a><a href="#">Students</a><a href="#">Reports</a></nav>
+</header>
+
+<div class="container">
+<div class="card"><h3>📚 My Courses</h3><p>DevOps Fundamentals</p><p>GitHub Actions CI/CD</p><p>Docker & GHCR</p><button class="btn">View All</button></div>
+<div class="card"><h3>👨‍🎓 Students</h3><p>Total: 45</p><p>Active Today: 12</p><p>Completion: 78%</p><button class="btn">Manage</button></div>
+<div class="card"><h3>📝 Assignments</h3><p>Week 1 WIL - Docker Build</p><p>Status: Completed ✅</p><p>Due: 7 Sept 2026</p><button class="btn">Submit</button></div>
+<div class="card"><h3>📊 Analytics</h3><p>System Uptime: 99.9%</p><p>GHCR Image: ghcr.io/thapelo-02/devops-week1-wil</p><p>Owner: Thapelo-02</p><button class="btn">View Logs</button></div>
+</div>
+</body>
+</html>
+EOF
+
+cat Dockerfile
+ls -l
